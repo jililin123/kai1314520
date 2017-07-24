@@ -1,0 +1,48 @@
+/* 样式重置 */
+body,p,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dd,dt{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration:none;
+	color: #999;
+}
+body{
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: #999;
+}
+img,input,button{
+	border: 0;
+	outline: none;
+	vertical-align: middle;
+}
+table{
+	border-collapse: collapse;
+}
+/* 设置公共类 */
+.clear:after{
+	clear: both;
+	display: block;
+	content: "";
+}
+/* IE兼容 */
+.clear{
+	zoom: 1;
+}
+/* 设置浮动 */
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+/* 版心设置 */
+.w980 {
+	width: 980px;
+	margin: 0 auto;
+}
+

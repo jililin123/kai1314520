@@ -1,0 +1,343 @@
+*{
+    padding:0;
+    margin:0;
+}
+.kzzs {
+    height: 8450px;
+    background-color: #181818;
+    /*position: absolute;*/
+    /*top: -250px;*/
+
+    background: url(../../images/bannerBg03.jpg) ;
+}
+.kzzs .w {
+    width: 980px;
+    height: 8400px;
+    margin:0px auto;
+
+    background-color: #ebebeb;
+}
+.kzzs .w #backfirst {
+    color: #ffc600;
+    font: 600 12px/19px "Œ¢»Ì—≈∫⁄";
+    padding-bottom: 20px;
+    background-color: #1c1c1c;
+}
+.kzzs .w #backfirst a {
+    color: #ffc600;
+    text-decoration: none;
+    font: 600 12px/19px "Œ¢»Ì—≈∫⁄";
+}
+.kzzs .w .kzzs-1 {
+    height: 578px;
+    background-color: #1c1c1c;
+}
+.kzzs .w .kzzs-1 div {
+    float:left;
+    position: relative;
+    cursor: pointer;
+}
+
+.kzzs .w .kzzs-1 .kzzs-1-1 {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.kzzs .w .kzzs-1 .kzzs-1-3 {
+    margin-right: 10px;
+}
+.kzzs .w .kzzs-1 .kzzs-1-2 {
+    margin-bottom: 10px;
+}
+.kzzs .w .kzzs-1 a {
+    display: block;
+    color:#fff;
+    position: absolute;
+    bottom:0px;
+    height: 40px;
+    width: 100%;
+    background-color:rgba(0,0,0,0.7);
+    text-decoration: none;
+    text-align: center;
+    font: 600 18px/40px "Œ¢»Ì—≈∫⁄";
+
+}
+
+
+
+
+.kzzs-1-1 {
+    background:url("../images/485adw.jpg");
+    width: 485px;
+    height: 284px;
+    overflow: hidden;
+    background-position: center;
+
+}
+.kzzs-1-1:hover {
+    background-size: 120% auto;
+
+}
+.kzzs-1-2 {
+    background:url("../images/The-Wallis-1_s-icon-big.jpg");
+    width: 485px;
+    height: 284px;
+    overflow: hidden;
+    background-position: center;
+
+}
+.kzzs-1-2:hover {
+    background-size: 120% auto;
+
+}
+.kzzs-1-3 {
+    background:url("../images/xan.jpg");
+    width: 485px;
+    height: 284px;
+    overflow: hidden;
+    background-position: center;
+
+}
+.kzzs-1-3:hover {
+    background-size: 120% auto;
+
+}
+.kzzs-1-4 {
+    background:url("../images/icon-big.jpg");
+    width: 485px;
+    height: 284px;
+    overflow: hidden;
+    background-position: center;
+
+}
+.kzzs-1-4:hover {
+    background-size: 120% auto;
+
+}
+/*tab¿∏*/
+.currentTab {
+    background-color: #10837e;
+}
+
+
+
+
+
+
+
+
+
+/*÷˜Ã‚Õ∆ºˆ*/
+.kzzsCurrent{
+    opacity: 0.2;
+}
+.kzzs .w .zttj {
+    /*background-color:rgba(0,0,0,0.7);*/
+    width: 980px;
+    height: 320px;
+    padding-top: 10px;
+    background-color: #202020;
+}
+
+.kzzs .w .zttj h3 {
+    display: block;
+    font: 600 26px/60px "Œ¢»Ì—≈∫⁄";
+    color: #fff;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.kzzs .w .zttj ul{
+    list-style: none;
+    margin-left: 40px;
+
+}
+.kzzs .w .zttj ul li {
+    float: left;
+    position: relative;
+    margin-right:20px ;
+
+}
+.kzzs .w .zttj ul li a div {
+    position: absolute;
+    bottom: 0px;
+    height: 70px;
+    background-color:rgba(0,0,0,0.7);
+
+}
+.kzzs .w .zttj ul li a div span {
+    display: block;
+    margin:0 10px;
+    color: #fff;
+    font: 600 16px/30px "Œ¢»Ì—≈∫⁄";
+    width: 265px;
+}
+
+.kzzs .w .zttj ul li a div p {
+    display: block;
+    margin-top: 5px;
+    height: 25px;
+    width: 220px;
+    float: right;
+}
+.kzzs .w .zttj ul li a div p i {
+    float: right;
+    width: 30px;
+    height: 25px;
+    padding-left: 30px;
+    background: url("../images/icon25x25.png") no-repeat;
+    font-style: normal;
+    color: #ffc600;
+    font-weight: 700;
+}
+.kzzs .w .zttj ul li a div p e {
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    right: -24px;
+    font-size: 12px;
+    display: none;
+    top: 5px;
+}
+/*»»√≈Õ∆ºˆ*/
+.kzzs .w .rmtj {
+    width: 980px;
+
+
+    /*height: 3000px;*/
+}
+
+.kzzs .w .rmtj h3 {
+    font:700 24px/40px "Œ¢»Ì—≈∫⁄";
+    margin-left: 40px;
+}
+/*»»√≈Õ∆ºˆ∑÷¿‡*/
+.kzzs .w .rmtj .rmtj-1 ul {
+    margin-left: 40px;
+
+}
+.kzzs .w .rmtj .rmtj-1 ul li {
+
+    list-style: none;
+    display: block;
+    width: 115px;
+    height: 35px;
+    margin-right: 5px;
+    float: left;
+    font:500 16px/35px "Œ¢»Ì—≈∫⁄";
+    text-align: center;
+    background-color: #ae861f;
+    cursor: pointer;
+}
+
+
+.rmtabColor {
+    background-color: #10837e;
+}
+
+
+.kzzs .w .rmtj .rmtj-1 ul #ms {
+    background-color: #10837e;
+}
+.kzzs .w .rmtj .rmtj-1 {
+    position: relative;
+}
+.kzzs .w .rmtj .rmtj-1 .sj {
+    width: 0;
+    height: 0;
+    /*background-color: pink;*/
+    border-top:10px #10837e solid  ;
+    border-bottom:10px transparent solid) ;
+    border-left:10px transparent solid ;
+    border-right:10px transparent solid  ;
+    position: absolute;
+    top: 35px;
+    left:86px;
+}
+
+
+
+
+
+/*»»√≈Õ∆ºˆ∑÷¿‡∂‘”¶µƒÕº∆¨*/
+
+.kzzs .w .rmtj .rmtj-content {
+    margin-top: 10px;
+    padding-left: 40px;
+    width: 980px;
+    clear:both;
+}
+
+.kzzs .w .rmtj .rmtj-content ul li {
+    list-style: none;
+    display: block;
+    width: 285px;
+    margin-right: 20px;
+    float: left;
+    margin-top: 25px;
+
+}
+.kzzs .w .rmtj .rmtj-content ul li img {
+    width: 285px;
+    height: 230px;
+}
+
+.kzzs .w .rmtj .rmtj-content ul li span {
+    padding-left: 10px;
+    width: 275px;
+    height: 60px;
+
+    font-size: 12px;
+    line-height: 60px;
+    font-family:"Œ¢»Ì—≈∫⁄";
+    background-color: #d4d4d4;
+    display: block;
+    /*text-align: center;*/
+}
+.kzzs .w .rmtj .rmtj-content ul li {
+    position: relative;
+}
+.kzzs .w .rmtj .rmtj-content ul li p {
+    width: 120px;
+    height: 28px;
+    position: absolute;
+    top:202px;
+    right:0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.kzzs .w .rmtj .rmtj-content ul li p e {
+    background:url("../images/icon25x25.png") no-repeat;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    top:7px;
+    cursor: pointer;
+
+}
+.kzzs .w .rmtj .rmtj-content ul li p strong {
+    display: block;
+    height: 40px;
+    width: 50px;
+    line-height: 40px;
+    top:7px;
+    cursor: pointer;
+    position: absolute;
+    top:-5px;
+    left:65px;
+    color:orange;
+    float: right;
+}
+
+
+.goTop {
+    width: 62px;
+    height: 62px;
+    background:url("../images/top.png") no-repeat;
+    position: fixed;
+    bottom:160px;
+    cursor: pointer;
+    right: 30px;
+    display: none;
+}
+
+
+

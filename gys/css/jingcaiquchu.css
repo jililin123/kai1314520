@@ -1,0 +1,267 @@
+.jcqc{
+    margin-bottom:20px;
+}
+.jcqc .w980 .jc-top{
+    width: 100%;
+}
+.jcqc .w980 h4{
+    color: #ffc600;
+    margin-bottom: 25px;
+}
+.jcqc .w980 .jc-top .jc-top-3{
+    margin-top: 8px;
+}
+/*************top 一栏 文字 style******************/
+.jcqc .w980 .jc-top .jc-top-1,.jcqc .w980 .jc-top .jc-top-2,.jcqc .w980 .jc-top .jc-top-3{
+    position: relative;
+}
+.jcqc .w980 .jc-top span{
+    position: absolute;
+    bottom:3px;
+    width: 100%;
+    height: 50px;
+    background: rgba(0,0,0,.8);
+    display: block;
+    text-align: center;
+}
+.jcqc .w980 .jc-top span {
+    color: #fffff0;
+    font:700 17px/50px "微软雅黑";
+}
+.jcqc .w980 .jc-top .jc-top-1 span:hover{
+    background:rgba(0,0,0,.3);
+}
+.jcqc .w980 .jc-top .jc-top-2 span:hover{
+    background:rgba(0,0,0,.3);
+}
+.jcqc .w980 .jc-top .jc-top-3 span:hover{
+     background:rgba(0,0,0,.3);
+ }
+/*************top 一栏 文字 end******************/
+/*************主题推荐 theme style******************/
+.theme-tj .w980{
+    margin-top: 20px;
+    height: 360px;
+    padding-top: 40px;
+    background: #333333;
+}
+.theme-tj .w980 h3{
+    margin-left: 40px;
+    color: #fff;
+}
+.theme-tj .w980 .theme-tj-zt{
+    width: 905px;
+    height: 230px;
+    margin-left: 40px;
+}
+.theme-tj .w980 .theme-tj-zt a img{
+    width: 285px;
+    height:230px;
+    margin-top: 25px;
+}
+.theme-tj .w980 .theme-tj-zt a.fl{
+    margin-right: 25px;
+}
+.theme-tj .w980 .theme-tj-zt a{
+    position: relative;
+}
+.theme-tj .w980 .theme-tj-zt a span{
+    height: 50px;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    bottom: 3px;
+    text-align: center;
+    font:700 18px/50px "微软雅黑";
+    color: #fff ;
+}
+.theme-tj .w980 .theme-tj-zt a span:hover{
+    background: rgba(0,0,0,0.5);
+}
+
+
+/*************主题推荐 theme   end******************/
+/*************热门推荐 hot style******************/
+/*************旋转 style******************/
+.indexBg .w980 .hot-tj{
+    padding-left: 30px;
+    padding-right: 31px;
+    margin-top: 203px;
+    background-color: #ebebeb;
+}
+.indexBg .w980 .hot-tj h3{
+    color: #333333;
+    font: 700 23px/98px "微软雅黑";
+}
+.indexBg .w980 .hot-tj .hot-tj-nav span{
+    float: left;
+    width: 114px;
+    height: 44px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 38px;
+}
+.indexBg .w980 .hot-tj .hot-tj-nav span .e{
+    font: 700 18px "微软雅黑";
+    color: #fff;
+}
+
+.indexBg .w980 .hot-tj .hot-tj-nav .hot-tj-nav-l .e:hover{
+    border-bottom: 2px dashed yellowgreen;
+    border-left: 2px dashed yellowgreen;
+}
+.indexBg .w980 .hot-tj .hot-tj-nav .hot-tj-nav-r .e:hover{
+    border-bottom: 2px dashed yellowgreen;
+    border-right: 2px dashed yellowgreen;
+}
+.indexBg .w980 .hot-tj .hot-tj-nav .hot-tj-nav-l{
+    background: url("../images/gys/title_qh.png");
+    margin-right: 5px;
+}
+.indexBg .w980 .hot-tj .hot-tj-nav .hot-tj-nav-r{
+    background: url("../images/gys/title_qh2.png");
+}
+/*==================豪宅图片====================*/
+.indexBg .w980 .hot-tj ul li{
+    width: 284px;
+    height: 290px;
+    margin: 30px 0 0 0;
+    text-align: center;
+
+}
+.indexBg .w980 .hot-tj ul li img{
+    width: 264px; /* 284 */
+    height: 220px;/* 230 */
+    margin-bottom: -3px;
+    border-radius: 25px;
+    -webkit-transition: all 500ms;
+
+}
+.indexBg .w980 .hot-tj #haozhai li span{
+    float: left;
+    display: block;
+    width: 274px;
+    height: 60px;
+    padding-left: 10px;
+    line-height: 60px;
+    font-size: 16px;
+    text-align: left;;
+    background: #D4D4D4;
+    border-radius: 50px 10px;
+    /*border-style: outset;*/
+}
+.indexBg .w980 .hot-tj #haozhai li a{
+    color: green;
+    font: 700 14px "微软雅黑";
+}
+.indexBg .w980 .hot-tj #haozhai li span:hover {
+    border-bottom: 4px solid #333;
+    border-right : 4px solid #333;
+}
+
+
+
+
+/*************热门推荐 hot   end******************/
+.revolve{
+    width:235px;
+    height:235px;
+   padding-top: 100px;
+    right:0;
+    left:0;
+    margin:auto;
+    perspective:1000px;/*视距*/
+}
+.revolve .scene{
+    transform-style:preserve-3D;/*子元素为3d模式*/
+    width:240px;
+    height:240px;
+    transform-origin:50%;/* 设置旋转的中心点*/
+    float:left; margin-right:60px;
+    -webkit-animation:slide 18s linear infinite;
+    animation:slide 18s linear infinite;
+}
+.revolve .scene ul li{
+    list-style:none;
+    width:235px;
+    height:235px;
+    /*border:5px solid blue;*/
+    position:absolute;
+}
+.revolve .scene ul li img{
+    width:235px;
+    height:235px;
+}
+/*.revolve .scene ul{*/
+    /*position: relative;*/
+/*}*/
+/*.revolve .scene ul li span{*/
+    /*position: absolute;*/
+    /*bottom: 10px;*/
+    /*height: 60px;*/
+    /*width: 100%;*/
+    /*background:rgba(0,0,0,0.5);*/
+/*}*/
+.revolve .scene ul li:nth-child(1){
+    transform: rotateY(0deg) translateZ(260px);
+}
+.revolve .scene ul li:nth-child(2){
+    transform:rotateY(60deg) translateZ(260px);
+}
+.revolve .scene ul li:nth-child(3){
+    transform:rotateY(120deg) translateZ(260px);
+}
+.revolve .scene ul li:nth-child(4){
+    transform:rotateY(180deg) translateZ(260px);
+}
+.revolve .scene ul li:nth-child(5){
+    transform:rotateY(240deg) translateZ(260px);
+}
+.revolve .scene ul li:nth-child(6){
+    transform:rotateY(300deg) translateZ(260px);
+}
+/*CSS3动画开始*/
+@-webkit-keyframes  slide{
+    from{transform:rotateY(0deg);
+    }
+    to{transform:rotateY(360deg);
+    }
+}
+@keyframes  slide{
+    from{transform:rotateY(0deg);
+    }
+    to{transform:rotateY(360deg);
+    }
+}
+.revolve .scene:hover{
+    -webkit-animation-play-state:paused;
+    animation-play-state:paused;
+}
+.revolve .scene li:hover img{
+    transform:scale(1.2);
+    border:5px solid rgba(255,255,255,0.5)
+}
+.xin{
+    position:fixed;
+    bottom:50px;
+    left:60px;
+    opacity:0;
+    -webkit-animation:xin 8s linear infinite;
+    animation:xin 8s linear infinite;
+}
+@-webkit-keyframes xin{
+    0%{opacity:1;}/*从什么时候开始*/
+    20%{bottom:300px; left:300px;opacity:0;}
+    40%{bottom:460px; left:680px;opacity:1;}
+    60%{bottom:300px; left:900px;opacity:0;}
+    80%{bottom:50px; left:1100px;opacity:1;}
+    100%{bottom:-150px; left:760px;opacity:0;}
+} @keyframes xin{
+      0%{opacity:1;}/*从什么时候开始*/
+      20%{bottom:300px; left:300px;opacity:0;}
+      40%{bottom:460px; left:680px;opacity:1;}
+      60%{bottom:300px; left:900px;opacity:0;}
+      80%{bottom:50px; left:1100px;opacity:1;}
+      100%{bottom:-150px; left:760px;opacity:0;}
+  }
+audio{display:none;}

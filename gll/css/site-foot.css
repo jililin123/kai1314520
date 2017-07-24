@@ -1,0 +1,120 @@
+/*==============font  style==========================*/
+.foot {
+    /*position: absolute;*/
+    /*bottom: 0px;*/
+    height: 195px;
+    width: 100%;
+    background-color: #333;
+}
+
+.foot.w980 {
+    width: 980px;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.foot .w980 .footerL {
+    padding-top: 20px;
+    float: left;
+    width: 700px;
+}
+
+.foot .w980 .footerL .footerMenu a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.foot .w980 .footerL .footerMenu a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.foot .w980 .footerL .footerMenu {
+    color: #fff;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.foot .w980 .footerL .other {
+    height: 60px;
+    margin-top: 25px;
+}
+
+.foot .w980 .footerL .other .otherL {
+    float: left;
+    width: 112px;
+    height: 59px;
+    background: url("../images/footerBg.png") no-repeat;
+    cursor: pointer;
+}
+
+.foot .w980 .footerL .other .otherR {
+    float: left;
+    width: 36px;
+    height: 23px;
+    margin: 17px 27px;
+    cursor: pointer;
+    background: url("../images/footerLogos.png") no-repeat -82px 0;
+
+}
+
+.foot .w980 .footerR {
+    width: 200px;
+    height: 63px;
+    padding-top: 62px;
+}
+
+.foot .w980 .footerR .footerRl {
+    width: 60px;
+    height: 60px;
+    float: right;
+    cursor: pointer;
+    margin-left: 10px;
+    background: url("../images/xinlang.png") no-repeat;
+}
+
+.foot .w980 .footerR .footerRr {
+    width: 60px;
+    height: 60px;
+    float: right;
+    cursor: pointer;
+    background: url("../images/weixin.png") no-repeat;
+}
+
+.foot .w980 .footerR .footerRl:hover {
+    opacity: 0.7;
+}
+
+.foot .w980 .footerR .footerRr:hover {
+    opacity: 0.7;
+}
+
+/*=========回到顶部==============*/
+
+/*.gotop{*/
+    /*width: 62px;*/
+    /*height: 62px;*/
+    /*background:url("../images/top.png") no-repeat;*/
+    /*position: fixed;*/
+    /*bottom:30px;*/
+    /*cursor: pointer;*/
+    /*right: 30px;*/
+    /*display: none;*/
+/*}*/
+
+
+
+
+/*=========回到end==============*/
+
+
+
+
+/*==============font  end==========================*/
+
+
+iframe {
+    frameborder: none;
+    scrolling:no;
+    width: 100%;
+}

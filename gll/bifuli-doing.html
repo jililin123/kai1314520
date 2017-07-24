@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>【比佛利美食】-比佛利山庄</title>
+
+    <link rel="stylesheet" href="css/bifuli-doing.css"/>
+    <link rel="stylesheet" href="css/site-foot.css"/>
+    <link rel="stylesheet" href="css/site-top.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <script src = "js/site-top.js"></script>
+    <script src="js/jquery-1.11.1-min.js"></script>
+    <script src="js/bifuli-doing.js"></script>
+
+    <script>
+        window.onload = function (){
+            var rmtj   =document.getElementsByClassName("rmtj")[0];
+
+            //var ul =rmtj.getElementsByTagName("ul")[0];
+            var liArr =document.getElementsByClassName("li");
+            var liImgArr =document.getElementsByClassName("liImg");
+
+//            var pArr =liArr.getElementsByTagName("p")[0];
+//            var eArr =pArr.getElementsByTagName("e")[0];
+//
+            //console.log(1);
+
+
+
+//            var rmtjTab = document.getElementsByClassName("rmtj-1")[0];
+//            var liTab =rmtjTab.getElementsByClassName("li");
+//            var sj =document.getElementsByClassName("sj")[0];
+//            for(var i=0;i<liTab.length;i++){
+//                liTab[i].setAttribute("index",i);//自定义属性值；
+//                liTab.onmouseenter= function (){
+//                    for(var j=0;j<liTab.length;j++){
+//                        liTab[j].removeAttribute("class");
+//                    }
+//                    this.setAttribute("class","rmtabColor");
+//                    var aaa = this.getAttribute("index");
+//                    sj.style.left = 86+115*aaa;
+//                }
+//            }
+
+
+            var tjTabArr = document.getElementsByClassName("tjTab");
+            var sj =document.getElementsByClassName("sj")[0];
+            for(var i=0;i<tjTabArr.length;i++){
+                tjTabArr[i].onmouseover = function (){
+                    console.log(1);
+                    this.className = "tjTab currentTab";
+                    for(var j=0;j<tjTabArr.length;j++){
+                        tjTabArr[j].className = "tjTab";
+
+                    }
+
+                }
+//                tjTabArr[i].onmouseout = function (){
+//                    for(var j=0;j<tjTabArr.length;j++){
+//                        tjTabArr[j].className = "";
+//                        console.log(1);
+//                    }
+//                    this.className = "currentTab";
+//                }
+            }
+
+
+
+
+
+
+
+
+
+            for(var i=0;i<liArr.length;i++){
+                liArr[i].onmouseenter = function (){
+                    for(var j=0;j<liArr.length;j++){
+                       // console.log(1);
+                        liArr[j].style.opacity=0.3;
+                    }
+                    this.style.opacity=1;
+//
+                }
+                liArr[i].onmouseleave = function (){
+                    for(var j=0;j<liArr.length;j++){
+                      //  console.log(1);
+                        liArr[j].style.opacity=1;
+                    }
+                    //this.style.opacity=1;
+
+                }
+            }
+
+
+
+
+
+//点赞增加数值
+
+//            var eArr = document.getElementsByTagName("e");
+//            var strArr = document.getElementsByTagName("strong");
+//
+//            var num =0;
+//            for(var i=0;i<eArr.length;i++){
+//                eArr[i].onclick = function (){
+//                    num++;
+//                   // eArr[i].setAttribute("index",num);//自定义属性值；
+//
+//                    this.nextSibling("strong").innerHTML =num ;
+//
+//
+//                }
+//
+//            }
+
+
+
+
+
+
+//返回顶部部分
+            var gotop = document.getElementsByClassName("goTop")[0];
+            var timer = null;
+            var leader = 0;
+            //绑定页面滑动事件;
+            window.onscroll = function () {
+                if(scroll().top > 100){
+                    gotop.style.display="block"
+                }else{
+                    //隐藏
+                    gotop.style.display="none"
+                }
+                //我们用也页面滑动为leader赋值,让leader成为页面的纵坐标;!!!
+                leader = scroll().top;
+            }
+//      window.scrollTo(x,y);   x代表横坐标;,y代表纵坐标;
+            gotop.onclick = function () {
+                //瞬间闪动到页面最顶端;
+//                window.scrollTo(0,0);
+                //模拟缓动动画,页面滑动到最顶端;
+                clearInterval(timer);
+                timer = setInterval(function () {
+                    //1.获取步长;
+                    var step = (0 - leader)/10;
+                    //2.二次处理
+                    step = step > 0?Math.ceil(step):Math.floor(step);
+                    //3.赋值;
+                    leader = leader + step;
+                    window.scrollTo(0,leader);
+                    //4.清除定时器;
+                    if(leader === 0){
+                        clearInterval(timer);
+                    }
+                },20);
+            }
+            function scroll(){
+                return {
+                    top: window.pageYOffset || document.documentElement.scrollTop,
+                    left: window.pageXOffset || document.documentElement.scrollLeft
+                }
+            }
+
+        }
+    </script>
+</head>
+<body>
+<!--网站的头部-->
+<div class="indexBg">
+    <!-- top距离-->
+    <div class="w980 indexTopSearch" id="top">
+        <div class="bg" ></div>
+        <div class="s" ></div>
+    </div>
+    <!-- 导航栏-->
+    <div class='indexNav'>
+        <div class='w980'>
+            <ul id="jll-top-ul">
+                <li><a href="../index.html"  class='here'><h2>首页</h2></a><span></span></li>
+                <li>
+                    <a href="../gys/gys-jcqu.html"  class=''>
+                        精彩去处 </a><span></span>
+                </li>
+                <li> <a href="../jll/jll.html"  class=''>
+                    奢华购物 </a><span></span>
+                </li>
+                <li>
+                    <a href="bifuli-doing.html"  class=''>
+                        可做之事 </a><span></span>
+                </li>
+                <li id="logo-wwwwwww"></li>
+                <li> <a href="../wxf/story.html"  class=''>比佛利故事 </a><span></span>
+                </li>
+                <li>
+                    <a href="../qglbt.html"  class=''>庄内展示 </a><span></span>
+                </li>
+                <li>
+                    <a href="../zyq.html"  class=''>留言板 </a><span></span>
+                </li>
+                <li>
+                    <a href="../wxf/zhuce.html"  class=''>登录</a><span></span>
+                </li>
+            </ul>
+            <!--放天使图片那个-->
+            <i style="left: 297px;"></i>
+            <h1 class='logo'>
+                <a href="#" >比佛利山庄</a>
+            </h1>
+        </div>
+    </div>
+
+    <!--<iframe src="tou.html" frameborder="none" scrolling="no";></iframe>-->
+
+
+
+    <div class="kzzs">
+
+
+        <div class="w">
+            <div id="backfirst">
+                <a href="#">首页</a> <span>> 可做之事</span>
+            </div>
+            <div class="kzzs-1">
+                <div class="kzzs-1-1">
+                    <!--<img src="images/485adw.jpg" alt=""/>-->
+                    <a href="#">克利斯蒂拍卖行有限公司</a>
+                </div>
+                <div class="kzzs-1-2">
+                    <!--<img src="images/The-Wallis-1_s-icon-big.jpg" alt=""/>-->
+                    <a href="#">沃利斯 • 安妮伯格表演艺术中心</a>
+                </div>
+                <div class="kzzs-1-3">
+                    <!--<img src="images/xan.jpg" alt=""/>-->
+                    <a href="#">西餐餐厅</a>
+                </div>
+                <div class="kzzs-1-4">
+                    <!--<img src="images/icon-big.jpg" alt=""/>-->
+                    <a href="#">罗迪欧大道精彩游</a>
+                </div>
+            </div>
+            <!--主题推荐-->
+            <!--<div class="zttj">-->
+                <!--<h3 id="zt">主题推荐</h3>-->
+                <!--<ul>-->
+                    <!--<li>-->
+                        <!--<a href="#">-->
+                            <!--<img src="images/BlueBottle1_icon.jpg" alt=""/>-->
+                            <!--<div>-->
+                                <!--<span>比佛利山庄知名咖啡店</span>-->
+                                <!--<p>-->
+                                    <!--<e>喜欢就点下</e>-->
+                                    <!--<i>0</i>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">-->
+                            <!--<img src="images/Diane-Kron_icon.jpg" alt=""/>-->
+                            <!--<div>-->
+                                <!--<span>比佛利山庄十大甜品</span>-->
+                                <!--<p>-->
+                                    <!--<e>喜欢就点下</e>-->
+                                    <!--<i>0</i>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</a>-->
+
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">-->
+                            <!--<img src="images/6-David-Yurman_icon.jpg" alt=""/>-->
+                            <!--<div>-->
+                                <!--<span>比佛利山庄2小时免费停车地点</span>-->
+                                <!--<p>-->
+                                    <!--<e>喜欢就点下</e>-->
+                                    <!--<i>0</i>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</a>-->
+
+                    <!--</li>-->
+                <!--</ul>-->
+
+            <!--</div>-->
+            <!--热门推荐-->
+            <div class="rmtj">
+                <h3>热门推荐</h3>
+                <div class="rmtj-1">
+                    <ul>
+                        <li id = "ms" class="tjTab">美食</li>
+                        <li class="tjTab">娱乐</li>
+                        <li class="tjTab">活动</li>
+                        <li class="tjTab">文化</li>
+                    </ul>
+                    <div class="sj"></div>
+                </div>
+                <div class="rmtj-content">
+                    <ul class="ul">
+                        <li class="li">
+                            <img class="liImg" src="images/icon11.jpg" alt=""/>
+                            <span>Urth Caffe</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Carvel_icon.jpg" alt=""/>
+                            <span>经典口味</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li" class="li">
+                            <img class="liImg" src="images/Laduree-Beverly-Hills_icon.jpg" alt=""/>
+                            <span>Ladurée</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Nerano.jpg" alt=""/>
+                            <span>Nerano</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Matthew-Kenney-NM.jpg" alt=""/>
+                            <span>Matthew Kenney NM</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/coral-tree-icon.jpg" alt=""/>
+                            <span>Coral Tree Café</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/The-Garden-Bar-Prickly-Pearjito-Cocktail-Menu-icon.jpg" alt=""/>
+                            <span>比佛利山庄蒙太奇酒店花园酒吧餐厅</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Georgie-Beverly-Hills-285.jpg" alt=""/>
+                            <span>Citizen</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Tutto-Bene-Logo-285.jpg" alt=""/>
+                            <span>比佛利山庄蒙太奇酒店Georgie餐厅</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Couscous-a-gogo-logo-285.jpg" alt=""/>
+                            <span>Tutto Bene面包咖啡屋</span>
+                            <p>
+
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Johnny-Sandwich-Logo-285.jpg" alt=""/>
+                            <span>Couscous a Gogo</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/M-Cafe-Beverly-Hills-Logo1.jpg" alt=""/>
+                            <span>Johnny Sandwich</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Heritage-Fine-Wines_icon.jpg" alt=""/>
+                            <span>M Café de Chaya</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Vampire-Lounge-Tasting-Room-BH_icon.jpg" alt=""/>
+                            <span>Avec Nous</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Honor-Wine-Spirits-Beverly-Hills_icon.png" alt=""/>
+                            <span>Il Fornaio</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/4icon.jpg" alt=""/>
+                            <span>Maude创新餐厅</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/3icon1.jpg" alt=""/>
+                            <span>Heritage Fine Wines</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Wine-Merchant-Beverly-Hills_icon.png" alt=""/>
+                            <span>Vampire酒吧和品酒室</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/09-icon.jpg" alt=""/>
+                            <span>Honor Wines and Spirits</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/10-icon.jpg" alt=""/>
+                            <span>Villa Blanca明星餐厅</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/08-icon.jpg" alt=""/>
+                            <span>La Dolce Vita意式复古餐厅</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/09-icon.jpg" alt=""/>
+                            <span>Honor Wines and Spirits</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/0012-1.jpg" alt=""/>
+                            <span>Clementine咖啡馆</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Creamistry-Beverly-Hills-001.jpg" alt=""/>
+                            <span>Creamistry</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/The-Cheese-Store-of-Beverly-Hills_icon.jpg" alt=""/>
+                            <span>比佛利山庄奶酪店</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/PBH_Belvedere_Daytime_AVABLU-Ryan-Forbes01.jpg" alt=""/>
+                            <span>比佛利山庄半岛酒店The Belvedere餐厅</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Edelweiss-Chocolates-icon.jpg" alt=""/>
+                            <span>Edelweiss巧克力店</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Wine-Merchant-Beverly-Hills_icon.png" alt=""/>
+                            <span>Vampire酒吧和品酒室</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img  class="liImg" src="images/icon5-2.jpg" alt=""/>
+                            <span>Lette马卡龙甜品店</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/icon3-3.jpg" alt=""/>
+                            <span>比佛利山庄摩洛哥炖菜馆</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Viviane-Restaurant-icon.jpg" alt=""/>
+                            <span>Viviane Restaurant</span>
+                        <p>
+                            <e></e>
+                            <strong>0</strong>
+                        </p>
+                    </li><li class="li">
+                        <img class="liImg" src="images/Anarbagh-Beverly-Hills01.jpg" alt=""/>
+                        <span>Anarbagh Beverly Hills</span>
+                        <p>
+                            <e></e>
+                            <strong>0</strong>
+                        </p>
+                    </li><li class="li">
+                        <img class="liImg" src="images/BoNuage01.jpg" alt=""/>
+                        <span>Bo Nuage</span>
+                        <p>
+                            <e></e>
+                            <strong>0</strong>
+                        </p>
+                    </li><li class="li">
+                        <img class="liImg" src="images/Fred-icon.jpg" alt=""/>
+                        <span>Freds时尚餐厅</span>
+                        <p>
+                            <e></e>
+                            <strong>0</strong>
+                        </p>
+                    </li><li class="li">
+                        <img class="liImg" src="images/icon-6.jpg" alt=""/>
+                        <span>Lawry's The Prime Rib牛排馆</span>
+                        <p>
+                            <e></e>
+                            <strong>0</strong>
+                        </p>
+                    </li>
+                        <li class="li">
+                            <img class="liImg" src="images/icon-2.jpg" alt=""/>
+                            <span>La Dolce Vita意式复古餐厅</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/08-icon.jpg" alt=""/>
+                            <span>历史悠久的Nate ‘n Al餐厅</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/01-3.jpg" alt=""/>
+                            <span>Ocean Prime牛排馆</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/The-Palm-icon.jpg" alt=""/>
+                            <span>The Palm Beverly Hills牛排馆</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/icon4-2.jpg" alt=""/>
+                            <span>Bouchon面包店</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/icon7-1.jpg" alt=""/>
+                            <span>Sprinkles纸杯蛋糕及冰淇淋店</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/main-icon1.jpg" alt=""/>
+                            <span>Chaumont面包咖啡屋</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/icon8-1.jpg" alt=""/>
+                            <span>Sugarfina特色糖果店</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Amorino-Gelato-icon.jpg" alt=""/>
+                            <span>Amorino Gelato意式冰淇淋</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/The-Palm-icon.jpg" alt=""/>
+                            <span>奶酪蛋糕工厂</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Nirvana-icon.jpg" alt=""/>
+                            <span>加州披萨厨房</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/New-Port-Seafood-icon.jpg" alt=""/>
+                            <span>Circa 55餐厅</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Il-Cielo-icon.jpg" alt=""/>
+                            <span>Il Cielo浪漫意大利餐厅</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Yojisan-Sushi-icon.jpg" alt=""/>
+                            <span>Yojisan日本料理</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Genwa-Korean-BBQ-icon-1.jpg" alt=""/>
+                            <span>Genwa韩式烧烤</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/p.s.-beverly-hills-at-SIRTAJ-Hotel-icon.jpg" alt=""/>
+                            <span>西尔泰酒店p.s. beverly hills餐厅</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Nirvana-icon.jpg" alt=""/>
+                            <span>Nirvana印度餐厅</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Mr.-Chow-icon.jpg" alt=""/>
+                            <span>Mr. Chow中式餐厅</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/New-Port-Seafood-icon.jpg" alt=""/>
+                            <span>New Port Seafood新式中餐厅</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/0031.jpg" alt=""/>
+                            <span>Bar Nineteen12</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/0013.jpg" alt=""/>
+                            <span>The Stinking Rose</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/02.jpg" alt=""/>
+                            <span>A60</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/0013.jpg" alt=""/>
+                            <span>Sharky's Woodfired Mexican Grill</span>
+                            <p>
+                                <e></e>
+                                <strong></strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Viviane-Restaurant-icon.jpg" alt=""/>
+                            <span>Viviane Restaurant</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        <li class="li">
+                            <img class="liImg" src="images/Vendome-Wine-Beverly-Hills_icon.jpg" alt=""/>
+                            <span>Vendome Wine and Spirits</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Compliment-Beverly-Hills_icon.jpg" alt=""/>
+                            <span>Compliment of Beverly Hills</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/0013.jpg" alt=""/>
+                            <span>Teuscher Chocolates</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Basanti-Tea-Beverly-Hills-Exterior-03.jpg" alt=""/>
+                            <span>Basanti Tea Bar</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Chaumont-Bakery-Beverly-Hills_icon.jpg" alt=""/>
+                            <span>Chaumont Bakery & Cafe</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Panera-Bread-Beverly-Hills-003.jpg" alt=""/>
+                            <span>Panera Bread</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/Spice-Affair-Beverly-Hills-02.jpg" alt=""/>
+                            <span>Spice Affair</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/pinkberry_icon.jpg" alt=""/>
+                            <span>喜欢冷冻酸奶吗？</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+                        <li class="li">
+                            <img class="liImg" src="images/icecream-lab_icon.jpg" alt=""/>
+                            <span>独创的美味</span>
+                            <p>
+                                <e></e>
+                                <strong>0</strong>
+                            </p>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+    <div class="goTop"></div>
+    <iframe src="gys-foot.html" frameborder="none" scrolling="no";></iframe>
+
+</body>
+</html>

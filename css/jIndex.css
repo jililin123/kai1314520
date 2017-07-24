@@ -1,0 +1,290 @@
+body{
+    background: #181818;
+}
+.w980{
+    width: 980px;
+    margin: 0 auto;
+}
+#test{
+    width: 980px;
+    height: 98px;
+    background-color: pink;
+}
+
+/*爱马仕区域*/
+.menu span {
+    line-height: 24px;
+    color: #FFC600;
+    text-shadow: #000 0 0 9px;
+    font-size: 14px;
+}
+.menu span a {
+    color: #FFC600;
+    text-shadow: #000 0 0 9px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.mt20 {
+    margin-top: 20px;
+}
+.w318 {
+    width: 318px;
+}
+.picbox1 a {
+    position: relative;
+}
+
+.picbox1 .bg,.picbox2 .bg {
+    background-color: #000;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    height: 40px;
+    width: 318px;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+}
+.picbox1 .txt,.picbox2 .txt {
+    width: 313px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+    bottom: 2px;
+    overflow: hidden;
+    line-height: 40px;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.picbox2 a{
+    position: relative;
+}
+.picbox2 {
+    margin-top: 8px;
+}
+.picbox3 a{
+    position: relative;
+}
+.picbox3 .bg {
+    background-color: #000;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    height: 40px;
+    width: 652px;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+}
+.picbox3 .txt {
+    width: 313px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+    bottom: 2px;
+    overflow: hidden;
+    line-height: 40px;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 161px;
+}
+/*.picbox3.bg:hover {*/
+    /*/!*opacity: 0.3;*!/*/
+    /*background: rgba(0,0,0,0.5);*/
+    /*/!*filter: alpha(opacity=30);*!/*/
+/*}*/
+a .bg,a .txt{
+    /*display: none;*/
+}
+
+/*主题推荐*/
+.gopart02{
+    width: 980px;
+    height: 420px;
+}
+.scrollArea{
+    padding-top: 20px;
+    height: 400px;
+    position: relative;
+}
+
+.gopart02 .scrollArea h3 {
+    color: #e6e6e6;
+    position: absolute;
+    top: 55px;
+    left: 35px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 24px;
+}
+.scrollArea .bg {
+    position: absolute;
+    background: #252525;
+    width: 980px;
+    height: 400px;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+.gopart02 .scrollList {
+    padding-top: 20px;
+    height: 320px;
+
+}
+.gopart02 .scrollList {
+    height: 230px;
+    width: 910px;
+    margin-left: 35px;
+    padding-top: 90px;
+}
+.scrollArea .scrollList ul {
+    width: 99999px;
+    margin-left: -25px;
+}
+.scrollArea .scrollList {
+    overflow: hidden;
+    height: 250px;
+    position: relative;
+}
+.gopart02 .scrollArea .scrollList li {
+    width: 285px;
+    position: relative;
+}
+.scrollArea .scrollList li {
+    float: left;
+    width: 310px;
+    margin-left: 25px;
+    display: inline;
+}
+
+.scrollArea .scrollList li a {
+    display: block;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+a {
+    color: #AE861F;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 14px;
+}
+.gopart02 .scrollArea .scrollList li a img {
+    width: 285px;
+    height: 230px;
+}
+.gopart02 .scrollArea .scrollList .scrollList-bg {
+    height: 70px;
+    width: 285px;
+}
+.scrollArea .scrollList .scrollList-bg {
+    background-color: #000;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    height: 60px;
+    width: 310px;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    background: #252525;
+}
+.gopart02 .scrollArea .scrollList .txt span {
+    display: block;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: left;
+}
+.scrollArea .scrollList .txt {
+    width: 265px;
+    height: 60px;
+    position: absolute;
+    left: 5px;
+    bottom: 3px;
+    overflow: hidden;
+    line-height: 60px;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+.gopart02 .scrollArea .scrollBarBg {
+    width: 910px;
+    margin-left: 35px;
+    background: url("../images/scrollBg2.png")50% 50% no-repeat;
+}
+.scrollArea .scrollBarBg {
+    height: 23px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 15px;
+}
+.scrollArea .scrollBarBg .scrollBar {
+    background: url("../images/scrollBar.png")50% 50% no-repeat;
+    width: 54px;
+    height: 21px;
+    overflow: hidden;
+    font-size: 1px;
+    position: absolute;
+    top: 2px;
+    cursor: pointer;
+}
+
+/*<!--热门推荐开始-->*/
+.gopart03 {
+    background: #EBEBEB;
+    padding: 30px 0 0 30px;
+    height: 6450px;
+}
+.gopart03 h3 {
+    display: block;
+    font-size: 24px;
+    color: #333333;
+}
+.picbox2-1 li {
+    position: relative;
+    margin: 0 30px 30px 0;
+    width: 285px;
+    height: 290px;
+    float: left;
+}
+.picbox2-1 li a img {
+    width: 285px;
+    height: 230px;
+}
+.picbox2-1 li span {
+    display: block;
+    width: 270px;
+    height: 60px;
+    background: #D4D4D4;
+    line-height: 60px;
+    padding-left: 15px;
+    font-size: 16px;
+    color: #333333;
+}
+.picbox2-1 li span a{
+    color: #252525;
+    font-size: 16px;
+}
+.picbox2-1 li {
+    float: left;
+    list-style: none;
+}
+.picbox2-1 li span a:hover {
+    text-decoration: underline;
+}
+.picbox2-1 li img {
+    display: block;
+}
+#gouwu li img{
+    border-radius: 50%;
+}
+#gouwu li img:hover{
+    transition: all 2s;
+    transform: rotateY(360deg);
+}
+
+
+

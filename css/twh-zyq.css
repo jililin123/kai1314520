@@ -1,0 +1,69 @@
+.indexBg{
+    background: url(../images/bannerBg03.jpg);
+    /*background: skyblue;*/
+}
+
+.zhuyuanqiang{
+    width: 1073px;
+    height: 610px;
+    background: url(../images/zhuyuanqiang.png);
+    margin-left: 180px;
+    margin-top: -30px;
+    position: relative;
+}
+.zhuyuanqiang .zhuyuantxt{
+    position: absolute;
+    right: 170px;
+    top: 227px;
+}
+.zhuyuanqiang .zhuyuantxt textarea{
+    width: 250px;
+    height: 180px;
+    font: 20px/20px "微软雅黑";
+    resize: none;
+}
+.zhuyuanqiang .zhuyuantxt button{
+    display: block;
+    width: 50px;
+    height: 30px;
+    margin-top: 15px;
+}
+.zhuyuanqiang .zhuyuantxt .neirong{
+    position: absolute;
+    width: 500px;
+    height: 380px;
+    /*background: #000;*/
+    top: -120px;
+    right:350px;
+}
+#zhitiao{
+    width: 500px;
+    height: 380px;
+    position: relative;
+}
+#zhitiao li {
+    position: absolute;
+    list-style: none;
+    width: 200px;
+    height: 187px;
+    background:url(../images/zhitiao11.png);
+}
+#zhitiao li .tuozhuai {
+    width: 200px;
+    height: 45px;
+    cursor: move;
+    /*background-color: #000;*/
+}
+#zhitiao li .zhitiaoliuyan {
+    width: 143px;
+    height: 46px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+.zhitiaofoot{
+    font:12px/12px "微软雅黑";
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 40px;
+    color:purple;
+}

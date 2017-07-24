@@ -1,0 +1,108 @@
+/*¥Û±≥æ∞Õº≤ø∑÷*/
+
+.indexBg {
+    height: 821px;
+    background: url("../images/bannerBg.jpg") 50% 0 no-repeat;
+    min-width: 980px;
+}
+/*µº∫Ω¿∏æ‡¿Î∂•≤øµƒæ‡¿Î*/
+.indexTopSearch {
+    height: 92px;
+    position: relative;
+}
+.w980 {
+    width: 980px;
+    margin: 0 auto;
+}
+/*µº∫Ω¿∏≤ø∑÷*/
+.indexNav {
+    height: 150px;
+    background: url("../images/navBg.png") 50% 0 no-repeat;
+    min-width: 980px;
+
+}
+.indexNav .w980 {
+    position: relative;
+    background: rgba(255,228,0,0.3);
+
+
+}
+
+.indexNav a.here {
+    text-shadow: 0 0 9px rgba(255,228,0,0.7);
+    text-decoration: none;
+}
+.indexNav a {
+    float: left;
+    line-height: 78px;
+    text-shadow: 2px 2px 1px rgba(1,1,1,0.45);
+    color: #fff;
+    width: 98px;
+    font:600 16px/78px  "Œ¢»Ì—≈∫⁄";
+    text-align: center;
+    position: relative;
+    z-index: 2;
+
+}
+.indexNav a:hover {
+    color: #fff;
+}
+.indexNav h2 {
+    margin: 0;
+    padding: 0;
+    font:600 16px/78px  "Œ¢»Ì—≈∫⁄";
+    color: #fff;
+    display: block;
+}
+.indexNav span {
+    float: left;
+    width: 1px;
+    height: 78px;
+    font-size: 1px;
+    line-height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    opacity: 0.15;
+    filter: alpha(opacity=15);
+}
+.indexNav .r {
+    float: right;
+}
+.indexNav i {
+    display: block;
+    width: 98px;
+    height: 78px;
+    position: absolute;
+    top:0;
+    left: 0;
+    background: url("../images/angle.png");
+}
+
+/*logo≤ø∑÷*/
+#logo-wwwwwww {
+    width: 159px;
+    height: 78px;
+}
+ul li{
+    float:left;
+}
+.indexNav .logo {
+    position: absolute;
+    background: url("../images/logo.png") 50% 0 no-repeat;
+    width: 159px;
+    height: 133px;
+    left: 40.5%;
+    top: -43px;
+    overflow: hidden;
+    text-indent: -99999px;
+}
+.indexNav .logo a{
+    width: 159px;
+    height: 133px;
+    display: block;
+}
+.fixed{
+    position: fixed;
+    top: 60px;
+    left: 184px;
+}

@@ -1,0 +1,104 @@
+/*-----------  内容部分样式  start -------------*/
+.con .menu span,.con .menu span a {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #FFC600;
+}
+/* 欢迎列表样式 */
+.con .bg_1 {
+    height: 148px;
+    overflow: hidden;
+}
+.con .bg_1 h2 {
+    font-size: 38px;
+    color: #fff;
+    margin: 25px 0 19px 30px;
+}
+.con .bg_1 ul .liColor {
+    background-color: #10837e;
+}
+
+.con .bg_1 ul {
+    margin-left: 30px;
+}
+.con .bg_1 ul li {
+    float: left;
+    cursor: pointer;
+    width: 114px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    margin-left: 3px;
+    position: relative;
+    background-color: #ae861f;
+}
+.con .bg_1 ul li a {
+    color: #fff;
+    font-size: 15px;
+}
+.content {
+    padding: 30px;
+    display: none;
+    background-color: #fff;
+}
+.con_x {
+    width: 880px;
+    height: 780px;
+    margin-top: 20px;
+    padding: 20px 20px 0 20px;
+    background-color: #d4d4d4;
+}
+.content .con_top {
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background: url(../images/lian_03.gif) no-repeat bottom right;
+}
+.content .con_top h3 {
+    font-size: 20px;
+    color: #000;
+}
+.clear {
+    background-color: #181818;
+    height:80px;
+}
+.content .con_bt_l {
+    width: 610px;
+}
+.content .con_bt_l strong {
+    font-size: 14px;
+}
+.content .con_bt_r {
+    width: 260px;
+    height: 470px;
+}
+.con_bt_l p {
+    text-indent: 25px;
+    line-height: 26px;
+    width: 580px;
+    font-size: 14px;
+    margin-top: 26px;
+}
+/*小三角样式*/
+.trangle:after{
+    display: inline-block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: -20px;
+    left: 50px;
+    /* display:none; */
+    border-top:10px #10837e solid;
+    border-left:10px transparent solid;
+    border-right:10px transparent solid;
+    border-bottom:10px transparent solid;
+}
+
+.show {
+    display: block;
+}
+/*-----------  内容部分样式  end -------------*/

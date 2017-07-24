@@ -1,0 +1,263 @@
+/*版心*/
+.page{
+    width: 980px;
+    margin: 0 auto;
+}
+
+/*焦点特效*/
+#leftBanner{
+    position: fixed;
+    left: 5px;
+    top: 88px;
+    width: 160px;
+    height: 350px;
+    background: url(../images/leftbanner.jpg);
+    opacity: 0.8;
+}
+#leftBanner h2{
+    color: purple;
+    font: 20px "微软雅黑";
+}
+/*欢迎栏*/
+.indexBg .welcome{
+    width: 980px;
+    height: 165px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.indexBg .welcome ul{
+    width: 15000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.indexBg .welcome ul li{
+    float: left;
+    width: 780px;
+    height: 165px;
+    text-align: center;
+    margin-left: 100px;
+}
+.indexBg .welcome ul li p{
+    color: #fff;
+    line-height: 30px;
+}
+.indexBg .welcome ul li h3{
+    font: 32px "微软雅黑";
+    color: #fff;
+}
+.indexBg .welcome ul li h3 span{
+    color: #e5d287;
+    font-size: 34px;
+}
+.indexBg .welcome ul li a{
+    width: 139px;
+    height: 39px;
+    border: 1px solid #000;
+    color: #4f3400;
+    line-height: 39px;
+    display: inline-block;
+    background-color: #c49814;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.lrtubiao{
+    position: relative;
+    height: 98px;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.lrtubiao b{
+    position: absolute;
+    width: 48px;
+    height: 92px;
+}
+#click-left{
+    left: 0;
+    top: 0;
+    background: url(../images/left.png);
+    cursor: pointer;
+}
+#click-right{
+    right: 0;
+    top: 0;
+    background: url(../images/right.png);
+    cursor: pointer;
+}
+
+/*滚动栏*/
+.gundongtiaoxk{
+    width: 982px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+#twhscroBottm{
+    width: 982px;
+    height: 23px;
+    background: url(../images/scrollBg.png) no-repeat;
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+}
+#twhscroBottm span{
+    position: absolute;
+    left: 0;
+    top: -5px;
+    width: 54px;
+    height: 21px;
+    background: url(../images/scrollBar.png);
+    cursor: pointer;
+}
+.gundongtiao{
+    width: 3070px;
+    height: 298px;
+    padding-top: 70px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.gundongtiao li {
+    float: left;
+    margin-right: 20px;
+}
+
+
+
+/*旋转木马主题*/
+.twh_jcty .page h3{
+    width: 980px;
+    height: 84px;
+    position: relative;
+    text-align: center;
+    font: 55px/60px"黑体";
+    overflow: hidden;
+}
+.twh_jcty .page h3 .txtZh{
+    display: block;
+    color: #929292;;
+    width: 264px;
+    height: 60px;
+    margin: auto;
+}
+.twh_jcty .page h3 .txtEn{
+    width: 264px;
+    height: 24px;
+    font-size: 22px;
+    color:#1a543a;
+    line-height: 24px;
+    display: block;
+    margin: 0 auto;
+}
+.twh_jcty .page h3 .lineLeft,.twh_jcty .page h3 .lineRight{
+    width: 450px;
+    height: 1px;
+    background-color: #1a543a;
+    position: absolute;
+
+}
+.twh_jcty .page h3 .lineLeft{
+    top: 35px;
+    left: -95px;
+}
+.twh_jcty .page h3 .lineRight{
+    top: 35px;
+    right: -95px;
+}
+/*旋转木马内容*/
+.muma{
+    position: relative;
+    height: 500px;
+    margin-top: 20px;
+}
+.muma li{
+    position: absolute;
+    left: 200px;
+    top: 0;
+}
+.muma li img{
+    width: 100%;
+}
+
+
+
+
+
+
+.twh_jcty{
+    height: 819px;
+    background-color: #181818;
+}
+.twh_jcty .page{
+    padding-top: 35px;
+    height: 724px;
+}
+
+
+.twh_indexBottom{
+    height: 150px;
+    background-color: #e3d6b4;
+    padding: 45px 0;
+}
+
+.twh_indexBottom .page ul li>a {
+    display: block;
+    width: 300px;
+    height: 127px;
+    padding-top: 23px;
+    padding-left: 20px;
+}
+.twh_indexBottom .page ul li a h4{
+    font:700 24px "微软雅黑";
+    color: #f0c96e;
+}
+.twh_indexBottom .page ul li a p {
+    margin-top: 22px;
+    font:18px/18px "微软雅黑";
+    color: #ffffd9;
+}
+.twh_indexBottom .page ul li a p:nth-of-type(2){
+    margin-top: 10px;
+}
+
+.twh_indexBottom .page ul li{
+    float: left;
+
+}
+.twh_1{
+    background: url(../images/twh_01.jpg);
+}
+.twh_2{
+    background: url(../images/twh_02.jpg);
+    margin: 0 10px;
+}
+
+#caidan{
+    transform-style: preserve-3d;
+    transition: all 2s;
+    position: relative;
+}
+
+.twh_3{
+    background: url(../images/twh_03.jpg);
+    position: absolute;
+    transform:translateZ(75px);
+    display:block;
+    width: 320px;
+    height: 150px;
+}
+.twh_4{
+    width: 320px;
+    height: 150px;
+    display:block;
+    background: url(../images/twh_04.png);
+    position: absolute;
+    transform:rotateX(90deg) translateZ(75px);
+}
+
+#caidan:hover {
+    transform: rotateX(-90deg) translateZ(75px);
+}

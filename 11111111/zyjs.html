@@ -1,0 +1,539 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>组员介绍</title>
+<script src="js/jquery-1.11.1.js"></script>
+
+</head>
+<style>
+
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		width:1366px;
+	/* 	height:3000px;
+		overflow:hidden; */
+
+	}
+	#image{
+
+		width:1366px;
+	
+	}
+	#clickevent{
+		position: absolute;
+		top: 800px;
+		left: 150px;
+		cursor:pointer;
+	}
+	#shangchao{
+		display:block;
+		width: 100px;
+		height: 60px;
+		background:gold;
+		text-align:center;
+		line-height:60px;
+		font-size:30px;
+		color:#fff;
+	}
+	#clickevent2{
+		position: absolute;
+		top: 800px;
+		left: 300px;
+		cursor:pointer;
+		display: none;
+	}
+	#tuichao{
+		display:block;
+		width: 100px;
+		height: 60px;
+		background:gold;
+		text-align:center;
+		line-height:60px;
+		font-size:30px;
+		color:#fff;
+	}
+		#yingsh{
+		position: absolute;
+		top: 800px;
+		left: 1050px;
+		cursor:pointer;
+		display:none;
+	}
+	#yingsheng{
+		display:block;
+		width: 100px;
+		height: 60px;
+		background:gold;
+		text-align:center;
+		line-height:60px;
+		font-size:30px;
+		color:#fff;
+	}
+		#songj{
+		position: absolute;
+		top: 800px;
+		left: 1200px;
+		cursor:pointer;
+		display:none;
+	}
+	#songjia{
+		display:block;
+		width: 100px;
+		height: 60px;
+		background:gold;
+		text-align:center;
+		line-height:60px;
+		font-size:30px;
+		color:#fff;
+	}
+	#laoshi{
+		opacity: 1;
+		position:absolute;
+		left:620px;
+		top: 520px;
+		width: 180px;
+		height: 260px;
+	}
+	#laoshi img{
+		position:absolute;
+		opacity: 1;	
+		transition: all 1.5s ease-in;
+		visibility:hidden;
+		transform-origin: center bottom ;
+		transform:rotate(720deg);
+	}
+	#laoshi1{
+		left: -1000px;
+		top: -1000px;
+		opacity:1;
+	}
+	#laoshi2{
+		left:-350px;
+		top: -1000px;
+	}
+	#laoshi3{
+		left:-100px;
+		top: -1000px;
+	}
+	#laoshi4{
+		left:100px;
+		top:-1000px;
+	}
+	#laoshi5{
+		left: 350px;
+		top:-1000px;
+	}
+	#laoshi6{
+		left:1000px;
+		top:-1000px;
+	}
+	#jieshao{
+		width: 1360px;
+		height: 300px;
+		/* background-color: #000; */
+		position:absolute;
+		top: 880px;
+		left: 0;
+
+	}
+	#jieshao li{
+		float: left;
+		width: 132px;
+		height: 200px;
+		text-align:center;
+		list-style:none;
+		/* border: 1px solid red; */
+		padding-top: 10px;
+		display:none;
+	}
+	#jieshao li img{
+		display:block;
+		line-height:175px;
+		vertical-align:middle;
+	}
+	#jieshao li p{
+		color:#fff;
+		font-size:16px;
+		text-align:left;
+		line-height:22px;
+	}
+	#hengfuxk{
+		width: 600px;
+		height: 180px;
+		position:absolute;
+		top: 320px;
+    left: 410px;
+    display:none;
+		/* background: url(img/hengfu.jpg) no-repeat; */
+		/* background:#000; */
+	}
+	#hengfutxt{
+		/* color:#fff; */
+			background:url(img/hengfu.jpg) no-repeat;
+			width: 600px;
+			height: 180px;
+	}
+
+	#hengfutxt p{
+		padding-top: 30px;
+		font:700 22px/22px "黑体";
+		text-align:center;
+	}
+	#fanpaizi{
+		position:absolute;
+		top: 180px;
+		left: 400px;
+		display:none;
+	}
+		#fanpaizi img{
+			position: absolute;
+			backface-visibility: hidden;
+		}
+	/* 	#paizi1{
+			backface-visibility: hidden;
+		}
+		#paizi2{
+			
+			backface-visibility: hidden;
+		}
+		#paizi3{
+		
+		backface-visibility: hidden;
+		}
+		#paizi4{
+		
+		backface-visibility: hidden;
+		} */
+		#feizi1{
+			top: 88px;
+			left: 11px;
+		}
+		#feizi2{
+	top: 88px;
+			left: 11px;
+		}
+		#feizi3{
+			top: 88px;
+			left: 11px;
+		}
+		#feizi4{
+			top: 88px;
+			left: 11px;
+		}
+
+		#fanpaizi ul li{
+	transition:all 2s;
+  transform-style: preserve-3d;
+  position: relative;
+  width: 144px;
+  height: 346px;
+  list-style:none;
+  float: left;
+		}
+		.zhuanzhuan{
+			transform:rotateY(180deg);
+		}
+	/* 		#fanpaizi ul li img:nth-child(1){
+  transform:rotateY(180deg);
+  backface-visibility: hidden;
+} */
+	#fanpaizi ul li img:nth-child(1){
+  transform:rotateY(180deg);
+  /* backface-visibility: hidden; */
+}
+	#fanpaizi ul li:nth-child(1){
+
+}
+
+</style>
+
+<div >
+	<img id="image" src="img/timg.jpg" />
+</div>
+
+<div id="clickevent">
+	<span id="shangchao">上朝</span>
+</div>
+<div id="clickevent2">
+	<span id="tuichao">屏退</span>
+</div>
+
+<div id="yingsh">
+	<span id="yingsheng">接驾</span>
+</div>
+
+<div id="songj">
+	<span id="songjia">送驾</span>
+</div>
+
+<div id="laoshi">
+	<img src="img/teacherlv.png" id="laoshi1">
+	<img src="img/teacherlv.png" id="laoshi2">
+	<img src="img/teacherlv.png" id="laoshi3">
+	<img src="img/teacherlv.png" id="laoshi4">
+	<img src="img/teacherlv.png" id="laoshi5">
+	<img src="img/teacherlv.png" id="laoshi6">
+</div>
+ <ul id="jieshao">
+ 		<li><img src="img/twh4.jpg" width="130"></li>
+ 		<li>
+ 			<p>
+ 				童文华<br>
+				昵称:偶像<br>
+				个人介绍:是个有偶像包袱的霸道总裁.<br>
+				职位:CEO.<br>
+				项目构想,负责想和说.
+ 			</p>
+ 		</li>
+ 		<li><img src="img/wxf.jpg" width="130"></li>
+ 		<li>
+ 			<p>
+ 				王晓飞<br>
+				昵称:兵哥哥.<br>
+				个人介绍:特种兵出身,文武双全.<br>
+				职位:保镖.<br>
+				主要工作内容:保护有偶像包袱的霸道总裁.<br>
+				兼职网页开发.<br>
+ 			</p>
+ 		</li>
+ 		<li><img src="img/gys.jpg" width="130"></li>
+ 		<li>
+ 			<p>
+ 				高永胜<br>
+				昵称:永胜<br>
+				职位:健身教练.<br>
+				主要工作内容:替有偶像包袱的霸道总裁圈粉.<br>
+				兼职网页开发.
+ 			</p>
+ 		</li>
+ 		<li><img src="img/jll.jpg" width="130" height="200"></li>
+ 		<li>
+ 			<p>
+				吉丽琳<br>
+				昵称:<br>
+				个人介绍:前F4成员<br>
+				职位:秘书.<br>
+				主要工作内容:维护童文华粉丝会正常运作.<br>
+				兼职网页开发.
+ 			</p>
+ 		</li>
+ 		<li><img src="img/gll.png" width="130" alt=""></li>
+ 		<li>
+ 			<p>
+ 				高刘林<br>
+ 				个人介绍:我叫高刘林,不叫刘高林,不叫林高刘. <br>
+ 				主要工作内容:CEO未安排. <br>
+ 				兼职网页开发.
+ 			</p>
+ 		</li>
+ </ul>
+
+<div id="hengfuxk">
+	<div id="hengfutxt">
+
+		<p>黑马前端7期第十三组</p>
+		<p>祝愿吕超老师龙体安康,前程似锦!!!</p>
+	</div>
+</div>
+
+
+<div id="fanpaizi">
+
+
+	<ul>
+		<li >
+			<img src="img/huanghou.png" width="120" id="feizi1">
+			<img src="img/paizi1.png" width="144" alt="" id="paizi1">
+
+
+		</li>
+		<li>
+			<img src="img/huangguifei.jpg" width="120" id="feizi2">
+			<img src="img/paizi2.png" width="144" alt="" id="paizi2">
+		</li>
+		<li>
+				<img src="img/huafei.png" width="120" id="feizi3">
+	<img src="img/paizi3.png" width="144" alt="" id="paizi3">
+
+		</li>
+		<li>
+	<img src="img/rufei.png"  width="120" id="feizi4">
+	<img src="img/paizi4.png" width="144" alt="" id="paizi4">
+			
+		</li>
+	</ul>
+	
+	
+
+	
+	
+</div>
+<script>
+	var yingsh = document.getElementById("yingsh");
+	var yingsheng = document.getElementById("yingsheng");
+	var laoshi = document.getElementById("laoshi");
+	var laoshi1 = document.getElementById("laoshi1");
+	var laoshi2 = document.getElementById("laoshi2");
+	var laoshi3 = document.getElementById("laoshi3");
+	var laoshi4 = document.getElementById("laoshi4");
+	var laoshi5 = document.getElementById("laoshi5");
+	var laoshi6 = document.getElementById("laoshi6");
+	yingsheng.onclick=function(){
+
+
+			$("#songj").fadeIn(5000);
+			$("#yingsh").fadeOut(5000);
+
+
+		laoshi.style.visibility="visible";
+			laoshi.style.opacity=1;
+			laoshi1.style.visibility="visible";
+			laoshi1.style.opacity=1;
+			laoshi1.style.transitionDelay="0.2s";
+			laoshi1.style.transform="rotate(0deg)";
+			laoshi1.style.left=0;
+			laoshi1.style.top=0;
+
+
+			laoshi2.style.visibility="visible";
+			laoshi2.style.opacity=1;
+			laoshi2.style.transitionDelay="0.4s";
+			laoshi2.style.transform="rotate(0deg)";
+			laoshi2.style.left=0;
+			laoshi2.style.top=0;
+
+
+
+			laoshi3.style.visibility="visible";
+			laoshi3.style.opacity=1;
+			laoshi3.style.transitionDelay="0.6s";
+			laoshi3.style.transform="rotate(0deg)";
+			laoshi3.style.left=0;
+			laoshi3.style.top=0;
+
+
+			laoshi4.style.visibility="visible";
+			laoshi4.style.opacity=1;
+			laoshi4.style.transitionDelay="0.8s";
+			laoshi4.style.transform="rotate(0deg)";
+			laoshi4.style.left=0;
+			laoshi4.style.top=0;
+
+			laoshi5.style.visibility="visible";
+			laoshi5.style.opacity=1;
+			laoshi5.style.transitionDelay="1s";
+			laoshi5.style.transform="rotate(0deg)";
+			laoshi5.style.left=0;
+			laoshi5.style.top=0;
+
+
+			laoshi6.style.visibility="visible";
+			laoshi6.style.opacity=1;
+			laoshi6.style.transitionDelay="1.2s";
+			laoshi6.style.transform="rotate(0deg)";
+			laoshi6.style.left=0;
+			laoshi6.style.top=0;
+	}
+	laoshi.onclick=function(){
+		laoshi1.style.transform="translate(0px, 0px) rotate(60deg)";
+		laoshi2.style.transform="translate(0px, 0px) rotate(120deg)";
+		laoshi3.style.transform="translate(0px, 0px) rotate(180deg)";
+		laoshi4.style.transform="translate(0px, 0px) rotate(240deg)";
+		laoshi5.style.transform="translate(0px, 0px) rotate(300deg)";
+		laoshi6.style.transform="translate(0px, 0px) rotate(360deg)";
+		$("#fanpaizi").fadeIn(3000);
+
+
+	}
+	var songjia = document.getElementById("songj");
+	songjia.onclick=function(){
+		laoshi1.style.transform="translate(0px, 0px) rotate(0deg)";
+		laoshi2.style.transform="translate(0px, 0px) rotate(0deg)";
+		laoshi3.style.transform="translate(0px, 0px) rotate(0deg)";
+		laoshi4.style.transform="translate(0px, 0px) rotate(0deg)";
+		laoshi5.style.transform="translate(0px, 0px) rotate(0deg)";
+		laoshi6.style.transform="translate(0px, 0px) rotate(0deg)";
+		$("#hengfuxk").fadeIn(10000);
+		$("#fanpaizi").hide();
+	}
+
+$('#clickevent').click(function(){
+	$("#clickevent2").fadeIn(5000);
+	$("#clickevent").fadeOut(5000);
+		$("#jieshao>li:eq(0)").slideDown(2000, function() {
+			$("#jieshao>li:eq(1)").fadeIn(2000, function() {
+				$("#jieshao>li:eq(2)").slideDown(2000,function(){
+					$("#jieshao>li:eq(3)").fadeIn(2000, function() {
+						$("#jieshao>li:eq(4)").slideDown(2000, function() {
+							$("#jieshao>li:eq(5)").fadeIn(2000, function() {
+								$("#jieshao>li:eq(6)").slideDown(2000, function() {
+									$("#jieshao>li:eq(7)").fadeIn(2000, function() {
+										$("#jieshao>li:eq(8)").slideDown(2000, function() {
+											$("#jieshao>li:eq(9)").fadeIn(2000);
+										});
+									});
+								});
+							});
+						});
+					});
+				})
+			});		
+		});
+});
+
+$("#clickevent2").click(function(){
+	$("#jieshao>li").slideUp(3000);
+	$("#clickevent2").fadeOut(5000);
+	$("#yingsh").fadeIn(5000);
+});
+
+
+
+var paizi1 = document.getElementById("paizi1");
+var paizi2 = document.getElementById("paizi2");
+var paizi3 = document.getElementById("paizi3");
+var paizi4 = document.getElementById("paizi4");
+var feizi1 = document.getElementById("feizi1");
+var feizi2 = document.getElementById("feizi2");
+var feizi3 = document.getElementById("feizi3");
+var feizi4 = document.getElementById("feizi4");
+
+
+$("#fanpaizi>ul>li").click(function() {
+	$(this).addClass('zhuanzhuan').siblings('li').css("display","none");
+});
+</script>
+
+<!-- <audio src=""></audio> -->
+
+<embed src="mp3/1111.mp3" hidden="true" autostart="true" loop="true">
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/jquery.animations.min.js"></script>
+<script src="js/jquery.animations-tile.js"></script>
+<script src="js/app.js"></script>
+
+<script type="text/javascript">
+$('#image').animate('tile', {
+		"effect": "fadeIn",
+		"sequent": true,
+		"adjustDuration": true
+	});
+</script>
+</body>
+</html>
+

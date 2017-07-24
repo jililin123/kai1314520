@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/site-foot.css"/>
+
+    <!--<script src="js/bifuli-doing.js" ></script>-->
+</head>
+<body>
+<!-- foot style-->
+<div class="foot">
+    <div class="w980">
+        <div class="footerL">
+            <div class="footerMenu">
+                <a href="#">关于比佛利山庄会议及旅游局</a> |
+                <a href="#" rel="nofollow">联系我们</a> |
+                <a href="#">团体服务</a> |
+                <a href="#">媒体中心</a> |
+                <a href="#" class="mail_dingy">邮件订阅</a> |
+                <a href="#">网站地图</a> |
+                <a href="#" rel="nofollow">隐私政策</a>
+            </div>
+            <div class="footerMenu">© 2017 比佛利山庄会议及旅游局版权所有
+                备案号 京ICP备05063701号-39号
+                <div class="mail">
+                </div>
+            </div>
+            <div class="other fl">
+                <div class="otherL"></div>
+                <div class="otherR"></div>
+            </div>
+        </div>
+        <div class="footerR fr">
+            <div class="footerRl"></div>
+            <div class="footerRr"></div>
+        </div>
+    </div>
+</div>
+<div class="gotop"></div>
+<!-- foot end-->
+
+</body>
+<script>
+
+
+    var gotop = document.getElementsByClassName("gotop")[0];
+    var timer = null;
+    var leader = 0;
+    //绑定页面滑动事件;
+    window.onscroll = function () {
+        if(scroll().top > 10){
+            gotop.style.display="block"
+        }else{
+            //隐藏
+            gotop.style.display="none"
+        }
+        //我们用也页面滑动为leader赋值,让leader成为页面的纵坐标;!!!
+        leader = scroll().top;
+    }
+    //      window.scrollTo(x,y);   x代表横坐标;,y代表纵坐标;
+    gotop.onclick = function () {
+        //瞬间闪动到页面最顶端;
+//                window.scrollTo(0,0);
+        //模拟缓动动画,页面滑动到最顶端;
+        clearInterval(timer);
+        timer = setInterval(function () {
+            //1.获取步长;
+            var step = (0 - leader)/10;
+            //2.二次处理
+            step = step > 0?Math.ceil(step):Math.floor(step);
+            //3.赋值;
+            leader = leader + step;
+            window.scrollTo(0,leader);
+            //4.清除定时器;
+            if(leader === 0){
+                clearInterval(timer);
+            }
+        },20);
+    }
+    function scroll(){
+        return {
+            top: window.pageYOffset || document.documentElement.scrollTop,
+            left: window.pageXOffset || document.documentElement.scrollLeft
+        }
+    }
+
+</script>
+</html>

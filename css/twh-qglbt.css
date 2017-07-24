@@ -1,0 +1,92 @@
+.indexBg{
+    background: url(../images/bg11.jpg);
+}
+#qglbt{
+    width: 980px;
+    height: 579px;
+    margin: 0 auto;
+}
+#lbt{
+    width: 700px;
+    height: 466px;
+    margin: 50px auto 0;
+    position:relative;
+}
+#lbt ul{
+    width: 20%;
+    height: 100%;
+    position: relative;
+    transform-style:preserve-3d;
+    float: left;
+}
+#lbt ul li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#lbt ul:nth-child(2) li{
+    background-position: -140px 0;
+}
+#lbt ul:nth-child(3) li{
+    background-position: -280px 0;
+}
+#lbt ul:nth-child(4) li{
+    background-position: -420px 0;
+}
+#lbt ul:nth-child(5) li{
+    background-position: -560px 0;
+}
+
+#lbt li:nth-child(1){
+    background: url(../images/qglbt1.jpg);
+    transform:translateZ(190px);
+}
+#lbt li:nth-child(2){
+    background: url(../images/qglbt2.jpg);
+    transform:rotateX(90deg) translateZ(190px);
+}
+
+#lbt li:nth-child(3){
+    background: url(../images/qglbt3.jpg);
+    transform:rotateX(180deg) translateZ(190px);
+}
+
+#lbt  li:nth-child(4){
+    background: url(../images/qglbt4.jpg);
+    transform:rotateX(270deg) translateZ(190px);
+}
+#lbt li:nth-child(5){
+     background: url(../images/qglbt5.jpg);
+     transform:rotateX(270deg) translateZ(190px);
+ }
+
+
+
+#left{
+    position: absolute;
+    top: 470px;
+    left: 250px;
+    width: 80px;
+    height: 60px;
+    color: skyblue;
+    font-size:80px;
+    cursor: pointer;
+}
+#right{
+    position: absolute;
+    top: 475px;
+    right   : 230px;
+    width: 80px;
+    height: 60px;
+    color: skyblue;
+    font-size:80px;
+    cursor: pointer;
+
+}
+#anniu{
+    display: none;
+}
+#qglbt h2{
+    color: #fff;
+    margin-left: 135px;
+}
